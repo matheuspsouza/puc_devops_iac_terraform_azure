@@ -1,5 +1,5 @@
 # puc_devops_iac_terraform_azure
-Azure Terraform project for learning purposes.
+**Azure Terraform project for learning purposes.**
 
 ## Pre-Requirements
 - Install Terraform
@@ -17,17 +17,17 @@ Azure Terraform project for learning purposes.
 ## Build
 - Add your credentials to terraform.tfvars or providers.tf.
 
-- Deploy:
+- Apply: Deploy the infrastructure. After applying is complete, important information will be shown too.
 ``` 
 terraform init
 terraform plan -out main.tfplan
-terraform apply "main.tfplan" 
+terraform apply main.tfplan
 ```
 
-- Remove resources (destroy):
+- Destroy: It will remove all resources created
 ```
 terraform plan -destroy -out main.destroy.tfplan
-terraform apply "main.destroy.tfplan"
+terraform apply main.destroy.tfplan
 ```
 
 
