@@ -24,7 +24,7 @@ terraform plan -out main.tfplan
 terraform apply main.tfplan
 ```
 
-- Destroy: It will remove all resources created
+- Destroy: It will remove all created resources.
 ```
 terraform plan -destroy -out main.destroy.tfplan
 terraform apply main.destroy.tfplan
