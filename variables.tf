@@ -15,3 +15,42 @@ variable "username" {
   description = "O usuario que vai ser usado pra acessar a VM."
   default     = "azureadmin"
 }
+
+variable "vm_count" {
+  description = "Number of VMs"
+  type        = number
+  default     = 2
+}
+
+variable "vm_network_interface_name_prefix" {
+  type        = string
+  description = "Nome das interface de rede das VMs"
+  default     = "myNicVM"
+}
+
+variable "vm_name_prefix" {
+  type        = string
+  description = "Nome das VMs"
+  default     = "myVM"
+}
+
+variable "azure_client_id" {
+  type        = string
+  description = "Azure Client Id"
+}
+
+variable "azure_client_secret" {
+  type        = string
+  description = "Azure Client Secret"
+}
+
+variable "azure_subscription_id" {
+  type        = string
+  description = "Azure Subscription Id"
+}
+
+variable "azure_tenant_id" {
+  type        = string
+  description = "Azure Tenant Id"
+}
+
